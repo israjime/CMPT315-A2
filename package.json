@@ -1,0 +1,14 @@
+{
+  "name": "@ij23/cmpt315-a2",
+  "version": "1.0.0",
+  "description": "Develop a basic JS library similar to Lodash that provides functions to manipulate arrays and objects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "CMPT315-A2"
+  ],
+  "author": "Isra Jime",
+  "license": "ISC"
+}
