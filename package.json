@@ -6,6 +6,10 @@
   "scripts": {
     "test": "npm run test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/israjime/cmpt315-a2.git"
+  },
   "keywords": [
     "CMPT315-A2"
   ],

@@ -1,10 +1,21 @@
-const _ = require('project-name');
-// Test Data :
-// const data = [2, 4, 8, 16, 32]
-// // 2 is a factor of 4
-// // 4 is a factor of 8
-// // 8 is a factor of 16
-// // 16 is a factor of 32
-// // therefore the result is true
-// const results1 = _.isArrayFactorChain([2, 4, 8, 16, 32]) // => true
-// const results2 = _.isArrayFactorChain([2, 4, 8, 16, 32, 68]) // => false
+const isArrayFactorChain = function(arr){
+    //  sets the first number of array to start
+    var a = arr[0];
+    // goes through each value and checks if the division is an integer
+    //  this should indicate that the previous number is a factor
+    for (let i=1 ; i < arr.length ; i++){
+        var b = arr[i];
+        var c = (b/a);
+        if (Number.isInteger(c)){
+            a = b;
+        }else{
+            // if this fails at any time, automatically return false.
+            return false
+        }
+    }
+    // if it makes it to the end, return true.
+    return true
+};
+
+module.exports = isArrayFactorChain;
+
